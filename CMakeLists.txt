@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( ImgAnalysis )
+find_package( OpenCV REQUIRED )
+add_executable( ImgAnalysis ImgAnalysis.cpp main.cpp )
+target_link_libraries( ImgAnalysis ${OpenCV_LIBS} )
